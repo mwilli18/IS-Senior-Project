@@ -9,6 +9,7 @@ html, body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: -4px 50px;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -29,7 +30,8 @@ html, body {
     z-index: 40;
     position: absolute;
     top: 50%;
-    background-color: rgb(255, 255, 255, 0.7);
+    background: rgb(255, 255, 255); /*Fallback!*/
+    background: rgba(255, 255, 255, 0.7);
     fill-opacity: 0.5;
     left: 0%;
     padding-bottom: 20px;
@@ -75,7 +77,8 @@ p {
     top: 185%;
     width: 100%;
     left: 0px;
-    background-color: rgb(237, 180, 144, 0.7);
+    background: rgb(237, 180, 144); /*Fallback*/
+    background: rgba(237, 180, 144, 0.7);
     z-index: 50;
     padding-top: 5%;
     margin-top: 0px;
@@ -220,7 +223,8 @@ body {
     left: 0;
     z-index: 500;
     width: 100%;
-    background: rgb(255, 255, 255, 0.7);
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.7);
     padding-top: 120px;
     padding-bottom: 110px;
     
@@ -326,7 +330,8 @@ input[type=submit] {
   height: 40px;
   border: none;
   box-shadow: #333;
-  background-color: rgb(184, 242, 238, 0.9);
+  background: rbg(184, 242, 238);
+  background: rgba(184, 242, 238, 0.9);
   font-size: 14px;
   font-family: 'Exo', sans-serif;
   font-family: 'Archivo Narrow', sans-serif;
@@ -420,7 +425,8 @@ html, body {
   top: 402%;
   width: 100%;
   z-index: 40;
-  background-color: rgb(190, 247, 248, 0.7);
+  background: rgb(190, 247, 248);
+  background: rgba(190, 247, 248, 0.7);
   left: 0%;
   padding-bottom: 15%;
   padding-top: 15%;
@@ -468,5 +474,22 @@ html, body {
 
 }
 
+/* @media for large screens */
+
+@media (min-width: 1800px) {
+.header ul {
+  position: absolute;
+  right: -500px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  
+  
+}
+}
 
 
+ 
+   
+ 
